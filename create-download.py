@@ -1,5 +1,5 @@
-import requests
 from pathlib import Path
+import requests
 import shutil
 
 x = input("Lotfan esme poshe khod ra type namaeed: ")
@@ -8,7 +8,7 @@ path = Path(x)
 
 print(path.mkdir())
 
-url = input("Enter your .jpg file url: ")
+url = input("Link Aks ba paswand .jpg ra type namaeed: ")
 
 y = input("name aks jahate zakhire ra vared namaeed: ")
 
