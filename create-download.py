@@ -12,10 +12,10 @@ url = input("Link Aks ba paswand .jpg ra type namaeed: ")
 
 y = input("name aks jahate zakhire ra vared namaeed: ")
 
-image = requests.get(url)
+aks = requests.get(url)
 
 with open(y, 'wb') as file:
-    file.write(image.content)
+    file.write(aks.content)
 
 source = Path(y)
 target = Path(x)
