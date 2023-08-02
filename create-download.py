@@ -1,0 +1,27 @@
+import requests
+from pathlib import Path
+import shutil
+
+x = input("Lotfan esme poshe khod ra type namaeed: ")
+
+path = Path(x)
+
+print(path.mkdir())
+
+url = input("Enter your .jpg file url: ")
+
+y = input("name aks jahate zakhire ra vared namaeed: ")
+
+image = requests.get(url)
+
+with open(y, 'wb') as file:
+    file.write(image.content)
+
+source = Path(y)
+target = Path(x)
+
+shutil.copy(source, target)
+
+
+
+
